@@ -63,6 +63,47 @@
       font-size: 12px;
       color: rgb(96, 96, 96);
     }
+
+    .header {
+      height: 55px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+
+    .first-section {
+
+
+      display: flex;
+      align-items: center;
+    }
+
+    .middle-section {
+      flex: 1;
+      margin-left: 70px;
+      margin-right: 35px;
+      max-width: 500px;
+
+
+    }
+
+    .last-section {
+      width: 200px;
+
+    }
+
+    .hamburger-menu {
+      height: 24px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+
+    .youtube-logo {
+      height: 20px;
+
+    }
   </style>
 
 
@@ -71,7 +112,20 @@
 <body>
   <div class="container">
     <header class="header">
-      <input type="text" placeholder="search">
+      <div class="first-section">
+        <img class="hamburger-menu" src=".vscode\icons\hamburger-menu.svg" alt="#">
+        <img class="youtube-logo" src=".vscode\icons\youtube-logo.svg" alt="#">
+
+
+      </div>
+      <div class="middle-section">
+        <input type="text" placeholder="Search">
+        <button><img class="search-button" src=".vscode\icons\search.svg" alt="#"></button>
+        <button><img class="voice-button" src=".vscode\icons\voice-search-icon.svg" alt="#"></button>
+
+      </div>
+      <div class="last-section">22</div>
+
 
     </header>
     <div class="middle">
