@@ -11,6 +11,8 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      padding-top: 80px;
+      padding-left: 80px;
 
 
     }
@@ -69,28 +71,106 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: white;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: black;
 
     }
 
     .first-section {
 
-
       display: flex;
       align-items: center;
+
     }
+
+
 
     .middle-section {
       flex: 1;
       margin-left: 70px;
       margin-right: 35px;
       max-width: 500px;
+      display: flex;
+      align-items: center;
 
 
     }
 
+    .search-button {
+      width: 60px;
+      height: 40px;
+      border-color: rgb(204, 204, 204);
+      background-color: rgb(247, 247, 247);
+      border-width: 1px;
+      border-style: solid;
+      margin-left: -1px;
+      margin-right: 10px;
+    }
+
+    .voice-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .search-bar {
+      flex: 1;
+      height: 36px;
+      padding-left: 10px;
+      font-size: 16px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(214, 214, 206);
+      border-radius: 2px;
+      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+      width: 0;
+    }
+
+    .search-icon {
+      height: 25px;
+      width: 35px;
+      margin-top: 4px;
+
+    }
+
+    .voice-icon {
+      height: 24px;
+      width: 23px;
+      margin-top: 4px;
+    }
+
     .last-section {
       width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 24px;
+      flex-shrink: 0;
 
+    }
+
+    .vedio {
+      height: 24px;
+    }
+
+    .notification {
+      height: 24px;
+
+    }
+
+    .img-channel {
+      height: 32px;
+    }
+
+    .box {
+      height: 24px;
     }
 
     .hamburger-menu {
@@ -102,6 +182,22 @@
 
     .youtube-logo {
       height: 20px;
+
+    }
+
+    .side-bar {
+      position: fixed;
+      left: 0;
+      width: 72px;
+      top: 55px;
+      bottom: 0;
+      border-right-width: 1px;
+
+      background-color: white;
+
+      border-right-style: solid;
+      border-right-color: black;
+
 
     }
   </style>
@@ -119,15 +215,31 @@
 
       </div>
       <div class="middle-section">
-        <input type="text" placeholder="Search">
-        <button><img class="search-button" src=".vscode\icons\search.svg" alt="#"></button>
-        <button><img class="voice-button" src=".vscode\icons\voice-search-icon.svg" alt="#"></button>
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button"><img class="search-icon" src=".vscode\icons\search.svg" alt="#"></button>
+        <button class="voice-button"><img class="voice-icon" src=".vscode\icons\voice-search-icon.svg" alt="#"></button>
 
       </div>
-      <div class="last-section">22</div>
+      <div class="last-section">
+        <img class="vedio" src=".vscode\icons\upload.svg" alt="#">
+        <img class="box" src=".vscode\icons\youtube-apps.svg" alt="#">
+        <img class="notification" src=".vscode\icons\notifications.svg" alt="#">
+        <img class="img-channel" src=".vscode\icons\my-channel.jpeg" alt="#">
+
+
+      </div>
 
 
     </header>
+    <div class="side-bar">
+
+
+
+
+
+
+
+    </div>
     <div class="middle">
       <div class="middle-side1">
         <div class="big-img"><img class="img-1" src="thumbnail-1.webp" alt="#"> </div>
